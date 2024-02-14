@@ -1,8 +1,8 @@
-import { ProductContent } from "../../typings/productTyping";
+delete my projectimport { ProductContent } from "../../typings/productTyping";
 
 function fetchProduct(url: string) {
-    const username = Bsharma07;
-    const password = Cardinalman17;
+    const username = 'Bsharma07';
+    const password = 'Cardinalman17';
     const newUrl = new URL(`https://www.walmart.com${url}`);
 
     console.log("Scrapping >>>  ", newUrl.toString());
@@ -10,11 +10,11 @@ function fetchProduct(url: string) {
     const body = {
         source: 'universal_ecommerce',
         url: newUrl.toString(),
-        // url: 'https://www.walmart.com/ip/Adidas-Moves-Body-Spray-for-Men-2-5-Oz/710726462',
+        // url: 'https://www.walmart.com/ip/Adidas-Moves-Body-Spray-for-Men-delete my projectdelete my project2-5-Oz/710726462',
         geo_location: 'United States',
         parse: true
     };
-
+delete my projectdelete my projectdelete my project
 
     const response = fetch('https://realtime.oxylabs.io/v1/queries', {
         method: 'post',
