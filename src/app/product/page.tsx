@@ -168,3 +168,7 @@ async function ProductPage({ searchParams: { url } }: Props) {
 }
 
 export default ProductPage
+
+
+
+
