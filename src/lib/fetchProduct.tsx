@@ -1,4 +1,4 @@
-import { ProductContent } from "../../typings/productTyping";
+delete my projectimport { ProductContent } from "../../typings/productTyping";
 
 function fetchProduct(url: string) {
     const username = 'Bsharma07';
@@ -14,7 +14,6 @@ function fetchProduct(url: string) {
         geo_location: 'United States',
         parse: true
     };
-delete my projectdelete my projectdelete my project
 
     const response = fetch('https://realtime.oxylabs.io/v1/queries', {
         method: 'post',
