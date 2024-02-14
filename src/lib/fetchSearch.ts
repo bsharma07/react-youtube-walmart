@@ -1,8 +1,8 @@
 import { Result } from "../../typings/searchTypings";
 
 function fetchSearch(serachTerm: string) {
-    const username = process.env.OXYLABS_USERNAME;
-    const password = process.env.OXYLABS_PASSWORD;
+    const username = Bsharma07;
+    const password = Cardinalman17;
     const newUrl = new URL(`https://www.walmart.com/search?q=${serachTerm}`);
 
     const body = {
