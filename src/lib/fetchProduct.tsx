@@ -1,8 +1,8 @@
 import { ProductContent } from "../../typings/productTyping";
 
 function fetchProduct(url: string) {
-    const username = process.env.OXYLABS_USERNAME;
-    const password = process.env.OXYLABS_PASSWORD;
+    const username = Bsharma07;
+    const password = Cardinalman17;
     const newUrl = new URL(`https://www.walmart.com${url}`);
 
     console.log("Scrapping >>>  ", newUrl.toString());
