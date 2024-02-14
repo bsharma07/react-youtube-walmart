@@ -1,4 +1,4 @@
-delete my projectimport { ProductContent } from "../../typings/productTyping";
+import { ProductContent } from "../../typings/productTyping";
 
 function fetchProduct(url: string) {
     const username = 'Bsharma07';
