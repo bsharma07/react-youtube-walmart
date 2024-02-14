@@ -14,38 +14,38 @@ interface CardState {
     removeFromCart: (product: Product) => void;
 }
 
- //export const useCartStore = create<CardState>()(
-   // devtools(
-     //   persist(
-            // (set, get) => ({
-            //     bears: 0,
-            //     cart: [],
+ export const useCartStore = create<CardState>()(
+   devtools(
+       persist(
+            (set, get) => ({
+                bears: 0,
+                cart: [],
 
-            //     addToCart: (product) => {
-            //         set((state) => ({
-            //             cart: [...state.cart, product],
-            //         }));
-            //     },
-                // removeFromCart: (product) => {
-                //     const productToRemove = get().cart.findIndex((p) => p.meta.sku === product.meta.sku);
-
-
-
-                    // set((state) => {
-
-                    //     const newCart = [...state.cart];
-
-                    //     newCart.splice(productToRemove, 1);
-                    //     return { cart: newCart };
-                    // })
+                 addToCart: (product) => {
+                    set((state) => ({
+                        cart: [...state.cart, product],
+                    }));
+                },
+                removeFromCart: (product) => {
+                    // const productToRemove = get().cart.findIndex((p) => p.meta.sku === product.meta.sku);
+                        const productToRemove = 4;
 
 
+                    set((state) => {
 
-              //  },
-          //  }),
-           // {
-            //    name: 'bear-storage',
-          //  },
-       // ),
-  //  ),
-//);
+                        const newCart = [...state.cart];
+
+                        newCart.splice(productToRemove, 1);
+                        return { cart: newCart };
+                    })
+
+
+
+               },
+            }),
+           {
+                name: 'bear-storage',
+           },
+       ),
+   ),
+);
